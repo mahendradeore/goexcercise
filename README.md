@@ -14,7 +14,7 @@
 # 2 How to build
   # 2.1 Compile server
   
-        # $cd server
+        # $cd network-grpc/server
         
         #  For Windows 
         
@@ -25,7 +25,7 @@
         # $ go build -o server main.go
          
    # 2.2 Compile client
-   # $cd client/
+   # $cd network-grpc/client
    
    #** For Windows **
    # $ go build -o client.exe main.go
@@ -34,7 +34,7 @@
    #  $ go build -o client main.go
    
  # 3 Start Server
-       ** $cd server**
+   #    $cd network-grpc/server
        
        ** For Windows **
   #     $./server.exe
@@ -47,7 +47,7 @@
           
  # 4 Start Client
  
-  # $ cd client/
+  # $ cd network-grpc/client
    
 # 4.1 Create Graph**
 
@@ -78,7 +78,7 @@ DeleteGraph Response :  graphId[8a052cc7-8ddb-4055-b294-c50ac6ea4b59] Successful
 
 # 5. Go Test for testing functional and performance test
 
-**$ cd server**
+# $ cd network-grpc/server
 
 # $go test -bench .
 
