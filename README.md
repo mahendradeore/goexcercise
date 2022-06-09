@@ -1,9 +1,14 @@
 # 1. Introduction
   gRPC service for undirected non-weighted graph.
+  
     Service creates a graph from the specified payload and returns an id for the graph
+    
     Finds the shortest path for the given graph id
+    
     Deletes the graph for the given graph id
+    
     server  has concurrent support.
+    
     use go pkg github.com/yourbasic/graph for graph operation.
     
 # 2 How to build
