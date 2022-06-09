@@ -29,11 +29,11 @@
        ** $cd server**
        
        ** For Windows **
-         ** $./server.exe **
+       $./server.exe
             server listening at [::]:9000   
        
        ****For linux ****
-         ** $./server**
+        $./server
             server listening at [::]:9000   
           
           
@@ -70,7 +70,7 @@ DeleteGraph Response :  graphId[8a052cc7-8ddb-4055-b294-c50ac6ea4b59] Successful
 
 **$ cd server**
 
-** $go test -bench **
+# $go test -bench .
 
 goos: windows
 
