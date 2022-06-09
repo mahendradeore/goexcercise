@@ -67,16 +67,23 @@ DeleteGraph Response :  graphId[8a052cc7-8ddb-4055-b294-c50ac6ea4b59] Successful
 
 
 # 5. Go Test for testing functional and performance test
-**** $ cd server**
 
-** $go test -bench .********
+**$ cd server**
+
+** $go test -bench **
 
 goos: windows
+
 goarch: amd64
+
 pkg: github.com/mahendradeore/goexcercise/network-grpc/server
+
 BenchmarkCreateGraph-8             21182             51186 ns/op
+
 PASS
+
 ok      github.com/mahendradeore/goexcercise/network-grpc/server        2.009s
+
 
 
 
