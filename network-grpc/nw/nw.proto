@@ -1,0 +1,52 @@
+syntax="proto3";
+
+option go_package=".";
+package nw;
+
+message Message {
+ string body = 1;
+}
+
+service ChatService {
+   rpc SayHello(Message) returns (Message){}
+}
+
+service GraphService {
+    rpc CreateGraph(CreateRequest) returns (CreateResponse) {}
+    rpc ShortestPath(ShortestPathRequest) returns (ShortestPathResponse) {}
+    rpc DeleteGraph(DeleteRequest) returns (DeleteResponse) {}
+}
+
+message CreateRequest {
+    repeated Edge edges = 1;
+}
+
+message Edge {
+    int32 source = 1;
+    int32 dest   = 2;
+}
+
+message CreateResponse {
+    string graphId = 1;
+    string err     = 2;
+}
+
+message ShortestPathRequest {
+    string graphId     = 1;
+    int32 source      = 2;
+    int32 destination = 3;
+}
+
+message ShortestPathResponse {
+    string shortestPath = 1;
+    string err          = 2;
+}
+
+message DeleteRequest {
+    string graphId = 1;
+}
+
+message DeleteResponse {
+    string message = 1;
+    string err     = 2;
+}
